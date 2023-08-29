@@ -1,0 +1,40 @@
+name: dev
+
+channels:
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - python
+  - jupyterlab
+  - ipython
+
+  ## Development tools
+  - black
+  - ruff
+  - mypy
+  - pytest
+  - colorlog
+
+  ## Data engineering
+  - pandas
+  - pyarrow
+  - tqdm
+
+  ## Data viz
+  - plotly
+  - seaborn
+  - matplotlib
+
+  ## Machine learning
+  - pytorch>=1.7
+  - torchvision>=0.8
+  - opencv
+
+  ## PIP packages
+  - pip
+
+platforms:
+  - linux-64
+  - osx-arm64  # For Apple Silicon, e.g. M1/M2
+  - linux-aarch64  # aka arm64, use for Docker on Apple Silicon
